@@ -681,7 +681,7 @@
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
                     auth.signOut().then(() => {
-                        window.location.href = 'admin.html';
+                        window.location.href = 'index.html';
                     });
                 });
             });
@@ -694,7 +694,7 @@
                     currentUser = user;
                     loadAdminData();
                 } else {
-                    window.location.href = 'admin.html';
+                    window.location.href = 'index.html';
                 }
             });
         }
