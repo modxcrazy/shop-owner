@@ -263,7 +263,7 @@
                 }
                 
                 // Redirect to admin dashboard
-                window.location.href = 'dashboard/products.html';
+                window.location.href = 'dashboard/dashboard.html';
                 
             } catch (error) {
                 let errorMessage = 'Login failed';
@@ -288,7 +288,7 @@
                 const adminDoc = await getDoc(adminDocRef);
                 
                 if (adminDoc.exists()) {
-                    window.location.href = 'products.html';
+                    window.location.href = 'dashboard/dashboard.html';
                 } else {
                     await auth.signOut();
                 }
