@@ -926,7 +926,7 @@
                 loadRecentActivity();
             } else {
                 // No user is signed in
-                window.location.href = 'admin.html';
+                window.location.href = 'index.html';
             }
         });
 
@@ -934,7 +934,7 @@
         userProfile.addEventListener('click', function() {
             if(confirm('Are you sure you want to logout?')) {
                 auth.signOut().then(() => {
-                    window.location.href = 'admin.html';
+                    window.location.href = 'index.html';
                 }).catch(error => {
                     console.error('Logout error:', error);
                     alert('Logout failed. Please try again.');
